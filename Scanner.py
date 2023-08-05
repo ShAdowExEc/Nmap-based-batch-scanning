@@ -5,12 +5,12 @@ import argparse
 
 print("***********by ShAdowExEc*************")
 print("***********请首先确保已经安装了NMAP并加入环境变量*************")
-print('***********基于nmap对多个目标ip:port批量扫描  [eg: python scanner.py -add  "-sC -sV -T4 --script ssl-enum-ciphers"]***********')
+print('***********基于nmap对多个目标ip:port批量扫描  [eg: python scanner.py -m "-sC -sV -T4 --script ssl-enum-ciphers"]***********')
 print('\n')  
 domains='domain.txt'
 resultfile='scanresult.txt'
 
-parser = argparse.ArgumentParser(description='基于nmap对多个目标ip:port批量扫描  [eg: python scanner.py -add  "-sC -sV -T4"]')
+parser = argparse.ArgumentParser(description='基于nmap对多个目标ip:port批量扫描  [eg: python scanner.py -m "-sC -sV -T4"]')
     
 parser.add_argument('-m', dest='mode', type=str, help='添加nmap的参数，如-sC -sV -T4 --script ssl-enum-ciphers', default=True)
   
